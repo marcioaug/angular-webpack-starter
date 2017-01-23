@@ -2,9 +2,18 @@
 
 var angular = require("angular");
 
-var HomeController = require("./home.controller");
 var HomeService = require("./home.service");
+var HomeComponent = require("./home.component");
+var HomeRoutes = require("./home.routes");
 
 module.exports = angular.module("home", [])
     .factory("HomeService", HomeService)
-    .controller("HomeController", HomeController);
+
+    .component("homeComponent", HomeComponent)
+
+    .config(function ($stateProvider) {
+        "use strict";
+        HomeRoutes.forEach(function (state) {
+            $stateProvider.state(state);
+        });
+    });

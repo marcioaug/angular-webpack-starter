@@ -5,7 +5,7 @@ module.exports = [function () {
 
     return {
         welcome: function () {
-            return "Hello from Angular App with Webpack";
+            return "Welcome!";
         }
     };
 
