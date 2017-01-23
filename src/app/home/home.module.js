@@ -6,7 +6,9 @@ var HomeService = require("./home.service");
 var HomeComponent = require("./home.component");
 var HomeRoutes = require("./home.routes");
 
-module.exports = angular.module("home", [])
+module.exports = angular.module("home", [
+    "ui.router"
+])
     .factory("HomeService", HomeService)
 
     .component("homeComponent", HomeComponent)

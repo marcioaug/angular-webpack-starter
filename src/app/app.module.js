@@ -14,6 +14,7 @@ angular.module("app", [
     "home"
 ])
     .component("appComponent", AppComponent)
+
     .config(function ($stateProvider, $urlRouterProvider) {
         "use strict";
 

@@ -6,10 +6,10 @@ require("./home.component.css");
 
 module.exports = {
     template: HomeControllerTemplate,
-    controller: ["HomeService", function (homeService) {
+    controller: function (HomeService) {
         "use strict";
 
-        this.welcome = homeService.welcome();
+        this.welcome = HomeService.welcome();
 
-    }]
+    }
 };
