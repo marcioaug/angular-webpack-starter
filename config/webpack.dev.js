@@ -8,6 +8,10 @@ var helpers = require("./helpers");
 
 module.exports = webpackMerge(commonConfig, {
 
+    entry: {
+        "dev": "./src/dev.js"
+    },
+
     devtool: "cheap-module-eval-source-map",
 
     output: {

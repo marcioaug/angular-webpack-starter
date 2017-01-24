@@ -5,7 +5,8 @@
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 3000",
     "test": "karma start",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "e2e": "protractor config/protractor.conf.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -27,6 +28,7 @@
     "karma-webpack": "^2.0.1",
     "null-loader": "^0.1.1",
     "phantomjs-prebuilt": "^2.1.14",
+    "protractor": "4.0.14",
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
